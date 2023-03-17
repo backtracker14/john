@@ -1,0 +1,35 @@
+<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="GRAD2" Height="408" Width="302.667">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF08FAB0" Offset="0"/>
+                <GradientStop Color="#FF0D8D65" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="btn1" Content="Press to hear the correct pronounciation of a sentence" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="273" Click="btn1_Click" Foreground="White" Height="47" FontSize="11">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF15FF00" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock Margin="67,10,0,0" TextWrapping="Wrap" Text="Welcome to John" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" TextDecorations="{x:Null}" FontSize="20" HorizontalAlignment="Left"/>
+        <Button x:Name="btn2" Content="Press to practice your grammar!" HorizontalAlignment="Left" Margin="10,146,0,0" VerticalAlignment="Top" Width="273" Click="btn2_Click" Foreground="White" Height="47">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF15FF00" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="TIP:Say &quot;EXIT&quot; to stop listening" HorizontalAlignment="Center" Margin="20,97,22.333,0" VerticalAlignment="Top" Width="251" FontStyle="Italic" FontSize="10" FontFamily="Segoe UI" Foreground="#FF001DFF"/>
+        <Image x:Name="micOn" Margin="100,0,96,34.667" 
+               Height="100" Width="100" VerticalAlignment="Bottom" 
+               Source="C:\Users\User\source\repos\GRAD2\Images\mic_on.png" 
+               Stretch="Fill" HorizontalAlignment="Center" Opacity="0"/>
+    </Grid>
+</Window> 
